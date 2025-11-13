@@ -1,0 +1,4 @@
+    FROM alpine/java:17-jdk
+    WORKDIR /appd
+    COPY MyApp.jar /app/MyApp.jar
+    CMD ["java", "-jar", "MyApp.jar"]
